@@ -28,3 +28,16 @@ else:
 #### Suppose we are building bilingual chatbot
 
 #### If user ask in hindi then we use HINDI prompt, if the user ask in English then we use English prompt
+
+```text
+           Input
+             │
+     Condition True?
+        /         \
+      Yes         No
+      │            │
+ Runnable A   Runnable B
+```
+
+#### Only one branch is executed.
+
