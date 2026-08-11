@@ -39,5 +39,15 @@ else:
  Runnable A   Runnable B
 ```
 
-#### Only one branch is executed.
+#### Only one branch is executed
 
+#### Struncture of runnable branch
+
+```python
+RunnableBranch(
+  (condition,runnable),
+  (condition,runnable),
+  default_runnable
+)
+
+```
