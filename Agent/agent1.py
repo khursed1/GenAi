@@ -28,9 +28,9 @@ agent = create_agent(
 )
 
 result = agent.invoke(
-    {"messages": [{"role": "user", "content": "What is 25 multiply by 25"}]}
+    {"messages": [{"role": "user", "content": "What is perimeter of rectangle with length 10 and width 5"}]}
 )
-print(result)
+# print(result)
 
 # The agent will perform
 
@@ -47,3 +47,15 @@ print(result)
         # LLM sees 200
         #        ↓
         # Final response
+
+# lets see what types of messages are sent to and fro by agent
+
+# for message in result['messages']:
+#     print('\n---')
+#     print(type(message))
+#     print(message)
+
+for message in result["messages"]:
+    print(type(message).__name__)
+    print(message)
+    print()
